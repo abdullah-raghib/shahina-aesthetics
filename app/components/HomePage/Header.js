@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Header() {
     return (
-        <div className='sticky top-0 h-16 bg-dark-green rounded-b-xl w-full flex justify-between px-2 items-center'>
+        <div className='sticky z-10 top-0 h-16 bg-dark-green rounded-b-xl w-full flex justify-between px-2 items-center'>
 
             {/* Hamburger */}
             <div className=''>
