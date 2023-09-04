@@ -16,7 +16,7 @@ export default function Login() {
                     </h2>
                 </div>
                 <div className="mt-7 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
+                    <form className="space-y-6">
                         <div>
                             <div className="mt-2">
                                 <input
