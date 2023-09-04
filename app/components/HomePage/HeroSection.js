@@ -4,9 +4,9 @@ import PersonPinCircleIcon from '@mui/icons-material/PersonPinCircle';
 export default function HeroSection() {
     const [name, setName] = useState("Jasmine")
     return (
-        <div className='text-cream flex flex-col m-3 items-center'>
+        <div className='text-cream flex flex-col m-3 mx-5 items-center'>
             <span className='text-lg'>Hello, <span className='font-bold'>{name}</span> </span>
-            <div className='h-32 w-80 rounded-md mt-5 flex flex-col items-center justify-around border-cream border'>
+            <div className='h-32 w-full rounded-md mt-5 flex flex-col items-center justify-around border-cream border'>
                 <div className='flex'>
                     <span className='text-white'><PersonPinCircleIcon /></span>
                     <span className='font-bold mr-2 text-white'>1 Visit Left! {' '}</span>

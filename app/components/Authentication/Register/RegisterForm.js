@@ -13,7 +13,7 @@ export default function RegisterForm() {
     }
     return (
         <div>
-            <div className="flex min-h-fit flex-1 w-72  flex-col justify-center">
+            <div className="flex min-h-fit flex-1 w-full flex-col justify-center">
 
                 <div className="mt-7 sm:mx-auto sm:w-full sm:max-w-sm">
                     <form className="space-y-6" action="#" method="POST">
@@ -24,7 +24,6 @@ export default function RegisterForm() {
                                 name="name"
                                 type="name"
                                 autoComplete="name"
-                                required
                                 placeholder="First Name"
                                 className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
@@ -38,7 +37,6 @@ export default function RegisterForm() {
                                 name="Last"
                                 type="Last"
                                 autoComplete="current-Last"
-                                required
                                 placeholder="Last Name"
                                 className="block w-full rounded-md border-0 py-3 px-4  bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
@@ -52,7 +50,6 @@ export default function RegisterForm() {
                                 name="email"
                                 type="email"
                                 autoComplete="email"
-                                required
                                 placeholder="Email"
                                 className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
@@ -80,7 +77,7 @@ export default function RegisterForm() {
                         <div>
                             <h1>Gender</h1>
                             <div className='flex items-center justify-between mt-2'>
-                                <button className='flex items-center w-[90px] h-10 justify-center border rounded-lg border-cream focus:bg-cream focus:text-dark-green'>
+                                <button className='flex items-center w-[110px] h-10 justify-center border rounded-lg border-cream focus:bg-cream focus:text-dark-green'>
                                     <div className='bg-cream px-1 rounded-full text-dark-green mr-1'>
                                         <MaleIcon fontSize='20px' />
                                     </div>
@@ -88,7 +85,7 @@ export default function RegisterForm() {
                                         Male
                                     </span>
                                 </button>
-                                <button className='flex items-center w-[90px] h-10 justify-center border rounded-lg px-1 py-1 border-cream focus:bg-cream focus:text-dark-green'>
+                                <button className='flex items-center w-[110px] h-10 justify-center border rounded-lg px-1 py-1 border-cream focus:bg-cream focus:text-dark-green'>
                                     <div className='bg-cream px-1 rounded-full text-dark-green mr-1'>
                                         <FemaleIcon fontSize='20px' />
                                     </div>
@@ -96,7 +93,7 @@ export default function RegisterForm() {
                                         Female
                                     </span>
                                 </button>
-                                <button className='flex items-center w-[90px] h-10 justify-center border rounded-lg px-1 py-1 border-cream focus:bg-cream focus:text-dark-green'>
+                                <button className='flex items-center w-[110px] h-10 justify-center border rounded-lg px-1 py-1 border-cream focus:bg-cream focus:text-dark-green'>
                                     <div className='bg-cream px-1 rounded-full text-dark-green mr-1'>
                                         <OtherIcon fontSize='20px' />
                                     </div>

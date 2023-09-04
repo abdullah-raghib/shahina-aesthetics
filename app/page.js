@@ -20,7 +20,7 @@ export default function Intro() {
     if (progress === 100) {
       setTimeout(() => {
         router.push("/login");
-      }, 500);
+      }, 100);
     }
   }, [progress])
 
@@ -29,7 +29,7 @@ export default function Intro() {
     setProgress(100);
   };
   return (
-    <main className="flex min-h-screen flex-col bg-dark-green text-white items-center justify-end">
+    <main className="flex min-h-[94vh] flex-col bg-dark-green text-white items-center justify-end">
       {/* Upper Section */}
       <div className='mb-24'>
         <Image src="/Landing-Page-Logo.png" width={500} height={500} alt="Shahina-Hoja-Aesthetics-Logo" />

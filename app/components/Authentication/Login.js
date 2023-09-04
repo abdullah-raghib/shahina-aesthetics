@@ -9,7 +9,7 @@ export default function Login() {
     }
     return (
         <>
-            <div className="flex min-h-full flex-1 w-72  flex-col justify-center">
+            <div className="flex min-h-full flex-1 w-[80%]  flex-col justify-center">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-cream">
                         Sign In
@@ -24,7 +24,6 @@ export default function Login() {
                                     name="number"
                                     type="number"
                                     autoComplete="number"
-                                    required
                                     placeholder="Phone Number ( +44 )"
                                     className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
@@ -38,7 +37,6 @@ export default function Login() {
                                     name="password"
                                     type="password"
                                     autoComplete="current-password"
-                                    required
                                     placeholder="Password"
                                     className="block w-full rounded-md border-0 py-3 px-4  bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />

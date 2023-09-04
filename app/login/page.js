@@ -19,10 +19,10 @@ const user = false;
 
   if(!user){
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center'>
+    <div className='min-h-[95vh] flex flex-col  items-center'>
       {/* Logo */}
-      <div className='mt-5'>
-        <Image src="/Landing-Page-Logo.png" width={150} height={150} alt="" />
+      <div className='pt-[50px]'>
+        <Image src="/Landing-Page-Logo.png" width={250} height={250} alt="" />
       </div>
       {/* Sign In Form */}
       <Login />
