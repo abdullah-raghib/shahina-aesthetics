@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Login  from "../components/Authentication/Login";
 import { Navbar } from '../components/Navbar';
 
-export default function page() {
+export default function Page() {
 const router = useRouter();
 // const auth = getAuth();
 // const user = auth.currentUser;

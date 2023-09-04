@@ -7,7 +7,7 @@ import PayLater from "../components/HomePage/PayLater";
 import ServiceMenu from "../components/HomePage/ServiceMenu";
 import ProductsBanner from "../components/HomePage/ProductsBanner";
 
-export default function page() {
+export default function Page() {
     return (
         <div className='h-[110rem]'>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import CrownIcon from "../components/Authentication/Register/CrownIcon";
 import RegisterForm from "../components/Authentication/Register/RegisterForm"
 
-export default function page() {
+export default function Page() {
     return (
         <div className="flex min-h-screen w-full flex-col bg-dark-green text-white items-center justify-between">
             {/* Text */}
