@@ -6,6 +6,9 @@ import LimitedOffers from "../components/HomePage/LimitedOffers";
 import PayLater from "../components/HomePage/PayLater";
 import ServiceMenu from "../components/HomePage/ServiceMenu";
 import ProductsBanner from "../components/HomePage/ProductsBanner";
+import MembershipBanner from "../components/HomePage/MembershipBanner";
+import Refer from "../components/HomePage/Refer";
+import Navbar from "../components/Navbar";
 
 export default function Page() {
     return (
@@ -42,12 +45,18 @@ export default function Page() {
                 </div>
 
                 {/* Membership  */}
-                <div className='mt-9 mb-3'>
+                <div className='mt-9 mb-3 mx-2'>
+                    <MembershipBanner />
+                </div>
 
+                {/* Refer and Earn */}
+                <div className='mt-9 mb-12 pb-28 mx-2'>
+                    <Refer />
                 </div>
             </div>
 
             {/* Bottom Navigation */}
+            <Navbar />
         </div>
     )
 }

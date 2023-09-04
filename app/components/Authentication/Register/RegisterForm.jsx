@@ -1,14 +1,17 @@
 'use client'
-import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import MaleIcon from "@mui/icons-material/Male"
 import FemaleIcon from "@mui/icons-material/Female"
 import OtherIcon from "@mui/icons-material/Transgender"
 import { useRouter } from 'next/navigation';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function RegisterForm() {
     const router = useRouter()
-    const handleRegister = ()=>{
+    const [date, setDate] = useState()
+    const [inputType, setInputType] = useState("text");
+    const handleRegister = () => {
         router.push('/home')
     }
     return (
@@ -25,7 +28,7 @@ export default function RegisterForm() {
                                 type="name"
                                 autoComplete="name"
                                 placeholder="First Name"
-                                className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
+                                className="block w-full rounded-md border-0 py-4 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
                         </div>
 
@@ -38,7 +41,7 @@ export default function RegisterForm() {
                                 type="Last"
                                 autoComplete="current-Last"
                                 placeholder="Last Name"
-                                className="block w-full rounded-md border-0 py-3 px-4  bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
+                                className="block w-full rounded-md border-0 py-4 px-4  bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
                         </div>
 
@@ -51,7 +54,7 @@ export default function RegisterForm() {
                                 type="email"
                                 autoComplete="email"
                                 placeholder="Email"
-                                className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
+                                className="block w-full rounded-md border-0 py-4 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
                         </div>
 
@@ -70,13 +73,13 @@ export default function RegisterForm() {
                                 </select>
                                 <div className='h-5 bg-cream w-[1px]'></div>
                             </div>
-                            <input type="text" name="phone-number" id="phone-number" className="focus:ring-cream focus:border-cream block w-full pl-20 py-3 sm:text-sm border-cream bg-transparent placeholder:text-cream rounded-md" placeholder="Contact Number" />
+                            <input type="text" name="phone-number" id="phone-number" className="focus:ring-cream focus:border-cream block w-full pl-20 py-4 sm:text-sm border-cream bg-transparent placeholder:text-cream rounded-md" placeholder="Contact Number" />
                         </div>
 
 
                         <div>
                             <h1>Gender</h1>
-                            <div className='flex items-center justify-between mt-2'>
+                            <div className='flex items-center justify-between mt-2 space-x-1'>
                                 <button className='flex items-center w-[110px] h-10 justify-center border rounded-lg border-cream focus:bg-cream focus:text-dark-green'>
                                     <div className='bg-cream px-1 rounded-full text-dark-green mr-1'>
                                         <MaleIcon fontSize='20px' />
@@ -104,19 +107,15 @@ export default function RegisterForm() {
                             </div>
                         </div>
 
-
                         <div className="mt-2">
                             <input
-                                id="date"
-                                name="date"
-                                type="date"
-                                autoComplete="date"
-                                placeholder="Date of Birth"
-                                className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
+                                type={inputType}
+                                placeholder="Date of Birth ( Double Click to Select )"
+                                onFocus={() => setInputType("date")}
+                                onBlur={() => setInputType("text")}
+                                className="block w-full rounded-md border-0 py-4 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
                         </div>
-
-
 
                         <div className="mt-2">
                             <input
@@ -125,7 +124,7 @@ export default function RegisterForm() {
                                 type="password"
                                 autoComplete="password"
                                 placeholder="Password"
-                                className="block w-full rounded-md border-0 py-3 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
+                                className="block w-full rounded-md border-0 py-4 px-4 bg-transparent text-cream shadow-sm ring-1 ring-inset ring-cream placeholder:text-cream focus:ring-2 focus:ring-inset focus:ring-cream sm:text-sm sm:leading-6"
                             />
                         </div>
 
@@ -139,7 +138,7 @@ export default function RegisterForm() {
                                 type="text"
                                 autoComplete="referral"
                                 placeholder="Enter Referral Code"
-                                className="focus:ring-white focus:border-white block w-full pl-20 py-3 sm:text-sm border-white bg-transparent placeholder:text-white rounded-md"
+                                className="focus:ring-white focus:border-white block w-full pl-20 py-4 sm:text-sm border-white bg-transparent placeholder:text-white rounded-md"
                             />
                         </div>
 
@@ -150,7 +149,7 @@ export default function RegisterForm() {
                                         <input id="offers" aria-describedby="offers-description" name="offers" type="checkbox" class="focus:ring-0 h-4 w-4 text-cream-600 border-cream rounded" />
                                     </div>
                                     <div class="ml-5 text-sm">
-                                    <span>I agree to the terms and conditions</span>
+                                        <span>I agree to the terms and conditions</span>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +159,7 @@ export default function RegisterForm() {
                             <button
                                 type="submit"
                                 onClick={handleRegister}
-                                className="flex w-11/12 justify-center rounded-md bg-cream px-2 py-3 font-[800] italic text-lg leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
+                                className="flex w-11/12 justify-center rounded-md bg-cream px-2 py-4 font-[800] italic text-lg leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cream"
                             >
                                 Register
                             </button>

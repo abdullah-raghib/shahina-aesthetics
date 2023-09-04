@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import CrownIcon from "../components/Authentication/Register/CrownIcon";
 import RegisterForm from "../components/Authentication/Register/RegisterForm"
@@ -16,7 +17,7 @@ export default function Page() {
 
             {/* Register Form */}
             <div className='w-[101%] mt-10 flex justify-center border-transparent rounded-t-3xl shadow-[0px_-1px_1px_white] h-[54rem]'>
-                <RegisterForm/>
+                <RegisterForm />
             </div>
         </div>
     )
