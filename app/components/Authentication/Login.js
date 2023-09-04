@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function Login() {
     const router = useRouter();
     const handleLogin = () =>{
-        router.push('/home')
+        router.replace('/home')
     }
     return (
         <>
@@ -16,7 +16,7 @@ export default function Login() {
                     </h2>
                 </div>
                 <div className="mt-7 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6">
+                    <div className="space-y-6">
                         <div>
                             <div className="mt-2">
                                 <input
@@ -45,8 +45,8 @@ export default function Login() {
 
                         <div className="flex items-center justify-center">
                             <button
-                            onClick={handleLogin}
-                                type="submit"
+                            onClick={() => router.replace('/home')}
+                               
                                 className="flex w-11/12 justify-center rounded-md bg-cream px-2 py-3 font-[800] italic text-lg leading-6 text-black shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Sign In
@@ -62,7 +62,7 @@ export default function Login() {
                         <div className="flex text-white text-sm font-thin items-center justify-center">
                             <p>-------------------------------------------</p>
                         </div>
-                    </form>
+                    </div>
 
                     <p className="mt-5 text-center text-sm text-gray-200">
                         Dont have an account?{' '}

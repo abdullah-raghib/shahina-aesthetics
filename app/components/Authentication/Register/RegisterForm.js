@@ -16,7 +16,7 @@ export default function RegisterForm() {
             <div className="flex min-h-fit flex-1 w-full flex-col justify-center">
 
                 <div className="mt-7 sm:mx-auto sm:w-full sm:max-w-sm">
-                    <form className="space-y-6" action="#" method="POST">
+                    <div className="space-y-6">
 
                         <div className="mt-2">
                             <input
@@ -165,7 +165,7 @@ export default function RegisterForm() {
                                 Register
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
