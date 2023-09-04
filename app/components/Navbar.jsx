@@ -24,22 +24,22 @@ export default function Navbar() {
         <p className='text-xs text-gray-300'>Book Online</p>
       </div>
 
-      {/* Book Online */}
+      {/* Shop */}
       <div className='flex flex-col items-center justify-center'>
         <ShoppingBagOutlinedIcon fontSize='large' className='text-gray-200' />
-        <p className='text-xs text-gray-300'>Home</p>
+        <p className='text-xs text-gray-300'>Shop</p>
       </div>
 
-      {/* Book Online */}
+      {/* Membership */}
       <div className='flex flex-col items-center justify-center'>
         <ContactEmergencyOutlinedIcon fontSize='large' className='text-gray-200' />
-        <p className='text-xs text-gray-300'>Home</p>
+        <p className='text-xs text-gray-300'>Membership</p>
       </div>
-      
-      {/* Book Online */}
+
+      {/* Rewards */}
       <div className='flex flex-col items-center justify-center'>
         <CardMembershipOutlinedIcon fontSize='large' className='text-gray-200' />
-        <p className='text-xs text-gray-300'>Home</p>
+        <p className='text-xs text-gray-300'>Rewards</p>
       </div>
     </div>
   )
