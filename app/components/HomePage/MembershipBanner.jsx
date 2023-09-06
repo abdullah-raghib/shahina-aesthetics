@@ -12,7 +12,7 @@ export default function MembershipBanner() {
         </button>
       </div>
       <div className='w-full h-44 relative'>
-        <Image src="/membership-banner.avif" fill={true} objectFit="cover" alt="" />
+        <Image src="/membership-banner.avif" fill={true} objectFit="top" alt="" />
       </div>
     </div>
   )
