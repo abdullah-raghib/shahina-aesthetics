@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function MembershipBanner() {
   return (
-    <div className='w-full relative h-44 rounded overflow-hidden'>
+    <div className='w-full relative h-44 lg:h-96 rounded overflow-hidden'>
       <div className='absolute right-2 pt-10 text-dark-green z-10 flex flex-col items-center'>
         <h2 className='text-xl font-extrabold'>Membership</h2>
         <p className='text-sm'>Feel Great, Look Amazing</p>
@@ -11,8 +11,8 @@ export default function MembershipBanner() {
           VIEW MORE
         </button>
       </div>
-      <div className='w-full h-44 relative'>
-        <Image src="/membership-banner.avif" fill={true} objectFit="top" alt="" />
+      <div className='w-full h-96 relative'>
+        <Image src="/membership-banner.avif" fill={true} objectFit="cover" objectPosition='top' alt="" />
       </div>
     </div>
   )

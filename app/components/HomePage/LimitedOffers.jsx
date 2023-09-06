@@ -8,9 +8,9 @@ export default function LimitedOffers() {
         router.push('/limited-offers')
     }
   return (
-    <div onClick={handleLimitedOffer} className='relative border border-cream w-full flex justify-center h-52'>
+    <div onClick={handleLimitedOffer} className='relative border border-cream w-full flex justify-center h-52 xl:h-96'>
         <button  className='z-10 absolute left-0 w-15 h-7 bg-cream px-1 mt-3 font-semibold text-sm'>LIMITED TIME OFFERS</button>
-        <Image src="/limited-offers.webp" fill={true} objectFit='cover'  alt="" />
+        <Image src="/limited-offers.webp" fill={true} objectFit='cover' objectPosition='top'  alt="" />
     </div>
   )
 }
