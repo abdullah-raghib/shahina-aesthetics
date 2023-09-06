@@ -12,13 +12,13 @@ import Navbar from "../components/Navbar";
 
 export default function Page() {
     return (
-        <div className='h-[110rem]'>
+        <div className='h-[110rem] flex flex-col items-center'>
 
             {/* Header */}
             <Header />
 
             {/* Main Section */}
-            <div>
+            <div className='w-full max-w-3xl m-auto'>
                 {/* Hero Section */}
                 <div className='mt-12 mb-3'>
                     <HeroSection />

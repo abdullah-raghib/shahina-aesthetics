@@ -19,7 +19,7 @@ const user = false;
 
   if(!user){
   return (
-    <div className='min-h-[95vh] flex flex-col justify-around  items-center'>
+    <div className='min-h-[95vh] max-w-4xl m-auto flex flex-col justify-around  items-center'>
       {/* Logo */}
       <div className='pt-[5px]'>
         <Image src="/Landing-Page-Logo.png" width={250} height={250} alt="" />
