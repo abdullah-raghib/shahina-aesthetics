@@ -13,7 +13,7 @@ export default function ProductsBanner() {
                 </button>
             </div>
             <div className='relative h-full w-1/2 overflow-hidden'>
-                <Image src="/skin-products-banner.jpg" fill={true} className='absolute' alt="" />
+                <Image src="/skin-products-banner.jpg" fill={true} objectFit='cover' className='absolute' alt="" />
             </div>
         </div>
     )
