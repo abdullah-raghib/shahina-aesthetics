@@ -14,31 +14,31 @@ export default function Navbar() {
 
       {/* Home */}
       <div className='flex flex-col items-center justify-center'>
-        <HomeOutlined fontSize='large' className='text-cream' />
+        <HomeOutlined fontSize='medium' className='text-cream' />
         <p className='text-xs text-cream'>Home</p>
       </div>
 
       {/* Book Online */}
       <div className='flex flex-col items-center justify-center'>
-        <EventRepeatOutlinedIcon fontSize='large' className='text-gray-200' />
+        <EventRepeatOutlinedIcon fontSize='medium' className='text-gray-200' />
         <p className='text-xs text-gray-300'>Book Online</p>
       </div>
 
       {/* Shop */}
       <div className='flex flex-col items-center justify-center'>
-        <ShoppingBagOutlinedIcon fontSize='large' className='text-gray-200' />
+        <ShoppingBagOutlinedIcon fontSize='medium' className='text-gray-200' />
         <p className='text-xs text-gray-300'>Shop</p>
       </div>
 
       {/* Membership */}
       <div className='flex flex-col items-center justify-center'>
-        <ContactEmergencyOutlinedIcon fontSize='large' className='text-gray-200' />
+        <ContactEmergencyOutlinedIcon fontSize='medium' className='text-gray-200' />
         <p className='text-xs text-gray-300'>Membership</p>
       </div>
 
       {/* Rewards */}
       <div className='flex flex-col items-center justify-center'>
-        <CardMembershipOutlinedIcon fontSize='large' className='text-gray-200' />
+        <CardMembershipOutlinedIcon fontSize='medium' className='text-gray-200' />
         <p className='text-xs text-gray-300'>Rewards</p>
       </div>
     </div>
