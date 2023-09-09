@@ -19,3 +19,7 @@
 body {
   background-color: #032520;
 }
+
+.overlay-open {
+  overflow: hidden;
+}
