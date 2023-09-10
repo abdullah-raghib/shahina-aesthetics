@@ -24,7 +24,7 @@ export default function MobileHeader() {
       initial="closed"
       animate="open"
       exit="closed"
-      className='fixed pl-16 pt-14 pb-10 inset-0 h-full z-40 bg-cream opacity-[0.98]  overflow-y-scroll'
+      className='fixed pl-16 lg:pl-24 pt-14 pb-10 inset-0 h-full z-40 bg-cream opacity-[0.98]  overflow-y-scroll'
     >
       {/* Profile Menu */}
       <div className='flex'>

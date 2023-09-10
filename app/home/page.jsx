@@ -20,7 +20,7 @@ export default function Page() {
             {/* Main Section */}
             <div className='w-full max-w-3xl m-auto'>
                 {/* Hero Section */}
-                <div className='mt-12 mb-3'>
+                <div className='mt-12 pt-8 mb-3'>
                     <HeroSection />
                 </div>
 

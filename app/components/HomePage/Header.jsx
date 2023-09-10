@@ -16,11 +16,11 @@ export default function Header() {
         }
     }, [mobileNav])
     return (
-        <div className='fixed z-40 top-0 h-16 bg-dark-green rounded-b-xl w-full flex justify-between px-2 items-center'>
+        <div className='fixed z-40 top-0 lg:space-x-5 h-16 bg-dark-green rounded-b-xl w-full flex lg:inline-block justify-between px-2 items-center'>
 
             {/* Hamburger */}
             <motion.button
-                className='z-50'
+                className='z-50 lg:hidden'
                 onClick={() => toggleMobileNav()}
                 animate={mobileNav ? "open" : "closed"}
             >
@@ -40,23 +40,23 @@ export default function Header() {
             </AnimatePresence>
 
             {/* Logo */}
-            <div>
-                <Image src="/Logo.png" width={50} height={50} alt="" />
+            <div className='lg:inline'>
+                <Image src="/Logo.png" width={50} height={50} alt="" className='lg:inline-block'/>
             </div>
 
             {/* Logo Text */}
-            <div>
-                <Image src="/Logo-Text.png" width={150} height={50} alt="" />
+            <div className='lg:inline'>
+                <Image src="/Logo-Text.png" width={150} height={50} alt="" className='lg:inline-block' />
             </div>
 
             {/* Search */}
-            <div className='w-15 h-15 text-cream' >
-                <Search fontSize='large' />
+            <div className='w-15 h-15 text-cream lg:inline lg:float-right'>
+                <Search fontSize='large'  />
             </div>
 
             {/* Cart */}
-            <div>
-                <Cart fontSize='large' className='text-cream' />
+            <div className='lg:inline lg:float-right'>
+                <Cart fontSize='large' className='text-cream lg:inline-block' />
             </div>
 
         </div>
