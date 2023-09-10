@@ -34,14 +34,14 @@ export default function Header() {
                 {mobileNav && (
                     <>
                         <MobileHeader />
-                        <Backdrop isOpen={mobileNav} onClose={toggleMobileNav}/>
+                        <Backdrop isOpen={mobileNav} onClose={toggleMobileNav} />
                     </>
                 )}
             </AnimatePresence>
 
             {/* Logo */}
             <div className='lg:inline'>
-                <Image src="/Logo.png" width={50} height={50} alt="" className='lg:inline-block'/>
+                <Image src="/Logo.png" width={50} height={50} alt="" className='lg:inline-block' />
             </div>
 
             {/* Logo Text */}
@@ -51,7 +51,7 @@ export default function Header() {
 
             {/* Search */}
             <div className='w-15 h-15 text-cream lg:inline lg:float-right'>
-                <Search fontSize='large'  />
+                <Search fontSize='large' />
             </div>
 
             {/* Cart */}
